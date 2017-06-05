@@ -1,0 +1,67 @@
+.blink {
+  animation: blink 5s infinite linear;
+}
+@keyframes blink {
+  0% {background-color: red;}
+  20% {background-color: orange;}
+  40% {background-color: yellow;}
+  60% {background-color: green;}
+  80% {background-color: blue;}
+  100% {background-color: purple;}
+}
+.smile1 {
+  width: 100px;
+  position: absolute;
+  animation: moveX 1s linear 0s infinite alternate, moveY 0.5s linear 0s infinite alternate ;
+}
+.smile2 {
+  width: 100px;
+  position: absolute;
+  animation: moveX 1s linear 0.5s infinite alternate, moveY 0.65s linear 1s infinite alternate ;
+}
+.smile3 {
+  width: 100px;
+  position: absolute;
+  animation: moveX 1s linear 0.65s infinite alternate, moveY 0.65s linear 2s infinite alternate ;
+}
+.smile4 {
+  width: 100px;
+  position: absolute;
+  animation: moveX 1s linear 0.25s infinite alternate, moveY 0.15s linear 1s infinite alternate ;
+}
+.smile5 {
+  width: 100px;
+  position: absolute;
+  animation: moveX 1s linear 0.5s infinite alternate, moveY 0.51s linear 0s infinite alternate ;
+}
+.smile6 {
+  width: 100px;
+  position: absolute;
+  animation: moveX 1s linear 0.5s infinite alternate, moveY 0.69s linear 0.51s infinite alternate ;
+}
+.smile7 {
+  width: 100px;
+  position: absolute;
+  animation: moveX 1s linear 0.35s infinite alternate, moveY 0.65s linear 2.4s infinite alternate ;
+}
+.smile8 {
+  width: 100px;
+  position: absolute;
+  animation: moveX 1s linear 0.85s infinite alternate, moveY 0.52s linear 1.2s infinite alternate ;
+}
+
+.spinRight {
+  animation: spinRight 0.41s infinite linear;
+}
+@keyframes moveX {
+  from { left: calc(100%); } to { left: 0; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: calc(100%); }
+}
+@keyframes spinRight {
+  0%  {transform: rotate(0deg);}
+  50% {width: 200px;}
+  80% {width: 10px;}
+  100%  {transform: rotate(359deg);}
+}
